@@ -75,6 +75,7 @@ img { /* All images should be at max width and shrink down if larger than the sc
     background:$var-color-orange;
 }
 
+
 figure { /* By default, remove margins on figures */
   margin:0;
 }
@@ -272,7 +273,7 @@ h3 {
   color:$var-color-dark-grey;
 }
 
-.col-1of4 h3:after {
+.col-1of4 h3:after { /* H3 titles on the works pages only */
   color:$var-color-dark-orange;
   content:"\A \2014";
   white-space:pre;
@@ -475,6 +476,7 @@ a {
   font-family:'Ubuntu-italic', Arial, sans-serif;
   margin:3em 0;
 
+/*
     h4 {
       margin:0;
     }
@@ -482,6 +484,12 @@ a {
     h4:before {
       color:$var-color-dark-orange;
       content:"\2014 \A";
+      white-space:pre;
+    }
+*/
+    p:after {
+      color:$var-color-dark-orange;
+      content:"\A \2014";
       white-space:pre;
     }
 
@@ -802,11 +810,6 @@ section[id] > h1 { /* Give a border to the sections with a header in them - on t
 
   section.section-contact, footer {
     margin-top:5em;
-  }
-
-  .project-image {
-    margin-right:4em;
-    margin-left:4em;
   }
 
   .img-profile {
