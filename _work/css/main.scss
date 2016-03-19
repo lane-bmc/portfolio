@@ -98,7 +98,7 @@ section {
 .section-style-guide section, .section-project-details:not(:last-of-type) { /* Applies bottom borders to certain sections - those that comprise top headings, and those that comprise style guide and project detail sections (but not the last of those sections) */
   margin-bottom:0.5em;
   padding-bottom:2em;
-  border-bottom:0.2em solid $var-color-light-grey;
+  border-bottom:0.1em solid $var-color-light-grey;
 }
 
 section.section-contact, footer { /* In some instances, the border should be applied to the top instead */
@@ -270,6 +270,12 @@ h3 {
   font-size:0.9em;
   margin-bottom: 0;
   color:$var-color-dark-grey;
+}
+
+.col-1of4 h3:after {
+  color:$var-color-dark-orange;
+  content:"\A \2014";
+  white-space:pre;
 }
 
 header h2 { /* H2 headers should convert to uppercase, unless it's the h2 header that appears in the header- that needs to have normal capitalization */
@@ -640,7 +646,7 @@ section[id] > h1 { /* Give a border to the sections with a header in them - on t
   font-size:2em;
   margin-bottom:0.5em;
   padding-bottom:2em;
-  border-bottom:0.2em solid $var-color-light-grey;
+  border-bottom:0.1em solid $var-color-light-grey;
 }
 
 /* STYLE GUIDE SPECIFICS */
