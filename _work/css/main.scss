@@ -95,7 +95,7 @@ section {
   width:100%;
 }
 
-.section-style-guide section, .section-project-details:not(:last-of-type), header { /* Applies bottom borders to certain sections - those that comprise top headings, and those that comprise style guide and project detail sections (but not the last of those sections) */
+.section-style-guide section, .section-project-details:not(:last-of-type) { /* Applies bottom borders to certain sections - those that comprise top headings, and those that comprise style guide and project detail sections (but not the last of those sections) */
   margin-bottom:0.5em;
   padding-bottom:2em;
   border-bottom:0.2em solid $var-color-light-grey;
@@ -113,8 +113,29 @@ section.section-style-guide {
   border:0;
 }
 
+header {
+  margin-bottom:4em;
+  padding:0 2em 5em 2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
 /* SECTIONS */
 
+
+
+
+
+
+/* HEADERS */
+
+.header-index {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* top, transparent black, faked with gradient */ 
+    url('../img/profile-picture-sunglasses.jpg');            /* bottom, image */
+  background-attachment: fixed;
+}
+
+/* HEADERS */
 
 
 
@@ -163,8 +184,13 @@ nav {
       @include transition(opacity 0.3s ease-out);
     }
 
-    a.nav-link-current { /* The .nav-link-current class identifies the active page, so that viewers can see which page they're on by looking at the navigation bar */
-      @include link-border-bottom();
+    a {
+      color: $var-color-white;
+    }
+
+    a.nav-link-current, a:focus, a:hover { /* The .nav-link-current class identifies the active page, so that viewers can see which page they're on by looking at the navigation bar */
+      color: $var-color-white;
+      border-bottom:0.15em solid $var-color-white;
     }
 
 }
@@ -191,7 +217,7 @@ h1 {
   margin-top:1.5em;
   margin-bottom:0;
   font-family: 'Ubuntu-700', Arial, sans-serif;
-  color:$var-color-dark-grey;
+  color:$var-color-white;
 }
 
 h2, h3 {
@@ -203,7 +229,7 @@ h2 {
   font-size:0.9em;
   margin-top: 0;
   margin-bottom: 0.5em;
-  color:$var-color-dark-orange;
+  color:$var-color-white;
 }
 
 h3 {
@@ -699,6 +725,11 @@ section[id] > h1 { /* Give a border to the sections with a header in them - on t
   h1 {
     font-size:3.5em;
     margin-top:1.5em;
+    text-align:center;
+  }
+
+  header h2 {
+    text-align:center;
   }
 
   .col-1of3 {
