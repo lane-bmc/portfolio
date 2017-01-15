@@ -182,6 +182,12 @@ header[class] {
     url('../img/axe-sings/axe-sings-banner.png');  /* bottom, image */
 }
 
+.header-nwhacks {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),   /* top, transparent black, faked with gradient */ 
+    url('../img/nwhacks/nwhacks-banner.png');  /* bottom, image */
+}
+
 /* HEADERS */
 
 
@@ -596,6 +602,31 @@ ul.contact-list {
 }
 
 /* CONTACT PAGE */
+
+
+
+
+
+
+/* VIDEO EMBEDS */
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin:1em 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* VIDEO EMBEDS */
+
 
 
 
