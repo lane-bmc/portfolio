@@ -188,6 +188,18 @@ header[class] {
     url('../img/nwhacks/nwhacks-banner.png');  /* bottom, image */
 }
 
+.header-optimail {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),   /* top, transparent black, faked with gradient */ 
+    url('../img/optimail/optimail-banner.png');  /* bottom, image */
+}
+
+.header-other-works {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),   /* top, transparent black, faked with gradient */ 
+    url('../img/other-works/other-works-banner.png');  /* bottom, image */
+}
+
 /* HEADERS */
 
 
